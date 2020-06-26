@@ -3,6 +3,12 @@ extends Node
 class_name Tile
 # Declare member variables here. Examples:
 var adjacentTiles = [null, null, null, null, null, null];
+var sprite = Sprite.new()
+
+func _init():
+	sprite.set_name("sprite")
+	add_child(sprite)
+	sprite.set_texture(load("res://hex.jpg"))
 
 # Called when the node enters the scene tree for the first time.
 func _ready():

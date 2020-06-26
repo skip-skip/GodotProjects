@@ -10,7 +10,9 @@ var super: SuperClass
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	super = SuperClass.new(3)
+	super = SuperClass.new(2)
+	super.set_name("SuperTile")
+	add_child(super)
 	pass # Replace with function body.
 
 
